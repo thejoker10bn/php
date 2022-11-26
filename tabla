@@ -1,0 +1,49 @@
+<html>
+    <body>
+        <h1>Tabla de datos</h1>
+        <table border="1">
+           
+
+            <?php
+                $nombre1   = "Adriana Martinez";
+                $direccion1 = "calle 55 No 28 37";
+                $telefono1 = "3125487896";
+                $fecha1 = " 5 de mayo 1997";
+                $color1 = " negro";
+                $significado1 = "La autoridad del poder";
+                $arr = array("Pedro Duarte", "Avenida 68 No 39-115", "3502214789", "13 de diciembre 1985" ,
+                    "azul" , "Prosperidad",
+                    "mariana jimenez", "torre 5 apto 702","3203563989","18 de agosto 1994",
+                    "amarillo","armonia");
+
+echo "<table border='1'>";
+echo "<tr>";
+echo "  <th> Nombre  </th>";
+echo "  <th> Direccion </th>";
+echo "  <th> Telefono </th>";
+echo "  <th> Fecha de cumpleaños </th>";
+echo "  <th> Color Favorito </th>";
+echo "  <th> Significado </th>";
+echo "</tr>";
+echo "<tr>";
+echo "<td> " . $nombre1 . "</td>";
+echo "<td> " . $direccion1 . "</td>";
+echo "<td> " . $telefono1 . "</td>";
+echo "<td> " . $fecha1 . "</td>";
+echo "<td> " . $color1 . "</td>";
+echo "<td> " . $significado1 . "</td>";
+
+echo "</tr>";
+echo "<tr>  <td>" . $arr[0] . "</td> <td>" . $arr[1] ."</td> <td>" . $arr[2] ."</td> <td>" . $arr[3] ."</td> <td>" . $arr[4] ."</td> "
+        . "  <td>" . $arr[5] ."</td></tr>" ;
+echo "<tr>  <td>" . $arr[6] . "</td> <td>" . $arr[7] ."</td> <td>" . $arr[8] ."</td> <td>" . $arr[9] ."</td> <td>" . $arr[10] ."</td> "
+        . "  <td>" . $arr[11] ."</td></tr>" ;
+echo "</table>";
+            
+            ?>
+
+        </table>
+        
+ 
+    </body>
+</html>
